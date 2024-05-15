@@ -16,9 +16,38 @@ h3 {
   text-align: center;
 }
 
+h1 {
+  flex: 1;
+  margin: 5px;
+  text-align: right;
+}
 /* Header */
 header {
+  flex-direction: row;
+}
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
   text-align: center;
+  display: flex;
+}
+.vertical-align {
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  flex: 1;
+}
+.portfolio-item {
+  flex: 1;
+  margin: 0px 5px
+}
+
+.portfolio-description {
+  font-size: 14px;
 }
 
 /* Containers */
@@ -40,6 +69,7 @@ article div {
 /* Paragraphs */
 p {
   line-height: 1.5;
+  flex: 2;
 }
 
 /* Links */
@@ -50,9 +80,18 @@ a:link {
 a:hover {
   color: #f77f00;
 }
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  text-align: left;
+}
 
 nav a {
-  padding-left: 20px;
+  padding-left: 30px;
+  text-align: left;
 }
 
 /* Images */
